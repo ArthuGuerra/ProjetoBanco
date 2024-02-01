@@ -1,0 +1,15 @@
+/home/arthur/Documentos/Dio/ProjetoBancoYou/bin/Debug/net6.0/ProjetoBancoYou
+/home/arthur/Documentos/Dio/ProjetoBancoYou/bin/Debug/net6.0/ProjetoBancoYou.deps.json
+/home/arthur/Documentos/Dio/ProjetoBancoYou/bin/Debug/net6.0/ProjetoBancoYou.runtimeconfig.json
+/home/arthur/Documentos/Dio/ProjetoBancoYou/bin/Debug/net6.0/ProjetoBancoYou.dll
+/home/arthur/Documentos/Dio/ProjetoBancoYou/bin/Debug/net6.0/ref/ProjetoBancoYou.dll
+/home/arthur/Documentos/Dio/ProjetoBancoYou/bin/Debug/net6.0/ProjetoBancoYou.pdb
+/home/arthur/Documentos/Dio/ProjetoBancoYou/obj/Debug/net6.0/ProjetoBancoYou.csproj.AssemblyReference.cache
+/home/arthur/Documentos/Dio/ProjetoBancoYou/obj/Debug/net6.0/ProjetoBancoYou.GeneratedMSBuildEditorConfig.editorconfig
+/home/arthur/Documentos/Dio/ProjetoBancoYou/obj/Debug/net6.0/ProjetoBancoYou.AssemblyInfoInputs.cache
+/home/arthur/Documentos/Dio/ProjetoBancoYou/obj/Debug/net6.0/ProjetoBancoYou.AssemblyInfo.cs
+/home/arthur/Documentos/Dio/ProjetoBancoYou/obj/Debug/net6.0/ProjetoBancoYou.csproj.CoreCompileInputs.cache
+/home/arthur/Documentos/Dio/ProjetoBancoYou/obj/Debug/net6.0/ProjetoBancoYou.dll
+/home/arthur/Documentos/Dio/ProjetoBancoYou/obj/Debug/net6.0/ref/ProjetoBancoYou.dll
+/home/arthur/Documentos/Dio/ProjetoBancoYou/obj/Debug/net6.0/ProjetoBancoYou.pdb
+/home/arthur/Documentos/Dio/ProjetoBancoYou/obj/Debug/net6.0/ProjetoBancoYou.genruntimeconfig.cache
