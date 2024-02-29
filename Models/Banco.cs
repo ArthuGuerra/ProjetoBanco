@@ -8,7 +8,7 @@ namespace ProjetoBancoYou.Models
 {
     public class Banco
     {
-        private string nome;
+        private string _nome;
 
         public string NumeroConta { get; private set;}
         public decimal Saldo { get; private set; }
@@ -27,7 +27,7 @@ namespace ProjetoBancoYou.Models
 
         public string Nome 
         {
-            get => nome;  
+            get => _nome;  
 
             set
             {
@@ -37,7 +37,7 @@ namespace ProjetoBancoYou.Models
                 }
                 else 
                 {
-                    nome = value;
+                   _nome = value;
                 }
             }
         }
@@ -71,7 +71,7 @@ namespace ProjetoBancoYou.Models
         public void Dados()
         {
             Console.WriteLine("Dados da conta:");
-            Console.WriteLine($"Nome do Titular: {nome}");
+            Console.WriteLine($"Nome do Titular: {_nome}");
             Console.WriteLine("\n");
             Console.WriteLine($"Numero da Conta: {NumeroConta}");
             Console.WriteLine("\n");
