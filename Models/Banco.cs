@@ -4,79 +4,72 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Globalization;
 
-namespace ProjetoBancoYou.Models
+namespace Banco.Models
 {
-    public class Banco
+    public class Bank
     {
-        private string _nome;
+        public int NumberAccount { get; private set; }
+        public string Holder { get; set; }
+        public double Saldo { get; private set; }
 
-        public string NumeroConta { get; private set;}
-        public decimal Saldo { get; private set; }
-
-        public Banco(string numeroConta, string nome)
-        {   
-            NumeroConta = numeroConta;
-            Nome = nome;
-            Saldo = 0;
-        }
-        
-        public Banco (string numeroConta, string nome, decimal saldo) :this(numeroConta,nome)
+        public Bank(){}
+        public Bank(int numberAccount,string holder)
         {
-            Saldo = saldo; 
+            NumberAccount = numberAccount;
+            Holder = holder;
         }
 
-        public string Nome 
-        {
-            get => _nome;  
 
-            set
+
+        public void DepositoInicial()
+        {
+             Console.WriteLine("Desejas realizar um deposito inicial ?  ");
+            string resp = Console.ReadLine();
+
+            if(resp == "S" || resp == "sim")
             {
-                if (value == null)
-                {
-                    throw new Exception("Nome inválido");
-                }
-                else 
-                {
-                   _nome = value;
-                }
+                Console.WriteLine("informe o valor de deposito");
+
+                double deposito = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
+
+                Saldo += deposito;
+
+                Console.WriteLine($"Novo Saldo: {Saldo.ToString("F2",CultureInfo.InvariantCulture)}");
+            }
+            else
+            {
+                Console.WriteLine("Deposito inicial cancelado. ");
+                Console.WriteLine($"Saldo inicial: {Saldo.ToString("F2",CultureInfo.InvariantCulture)}");
+
             }
         }
 
-
         public void Depositar()
         {
-            Console.WriteLine("Ola, seja bem-vindo!");
-            Console.WriteLine("Quanto o senhor(a) deseja depositar ? ");
-            decimal valor = Convert.ToDecimal(Console.ReadLine(),CultureInfo.InvariantCulture);
-
-            Saldo += valor;
-            Console.WriteLine("Depósito feito com sucesso!");
-            Console.WriteLine("\n");
-            Console.WriteLine($"Saldo atual: R${Saldo.ToString("F2",CultureInfo.InvariantCulture)}");
-
+           
+            Console.WriteLine("Informe o valor de deposito");
+            double deposito = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture); 
+            Saldo += deposito;
+            Console.WriteLine($"Novo Saldo: {Saldo.ToString("F2",CultureInfo.InvariantCulture)}");
+            
         }
 
-        public void Sacar()
+        public void Saque()
         {
-            Console.WriteLine("Ola, seja bem-vindo!");
-            Console.WriteLine("Quanto o senhor(a) deseja sacar ? ");
-            decimal valor = Convert.ToDecimal(Console.ReadLine(),CultureInfo.InvariantCulture);
 
-            Saldo -= valor + 5;  // taxa de 5 reais por saque
-            Console.WriteLine("Saque feito com sucesso!");
-            Console.WriteLine("\n");
-            Console.WriteLine($"Saldo atual: R${Saldo.ToString("F2",CultureInfo.InvariantCulture)}");
+            Console.WriteLine("Informe o valor de saque");
+            double saque = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture); 
+            Saldo -= saque + 5;
+            Console.WriteLine($"Novo Saldo: {Saldo.ToString("F2",CultureInfo.InvariantCulture)}");
+
         }
 
         public void Dados()
         {
-            Console.WriteLine("Dados da conta:");
-            Console.WriteLine($"Nome do Titular: {_nome}");
-            Console.WriteLine("\n");
-            Console.WriteLine($"Numero da Conta: {NumeroConta}");
-            Console.WriteLine("\n");
-            Console.WriteLine($"Saldo Atual: R${Saldo.ToString("F2",CultureInfo.InvariantCulture)}");
-
+            Console.WriteLine($"Number Account: {NumberAccount}");
+            Console.WriteLine($"Holder: {Holder}");
+            Console.WriteLine($"Saldo: {Saldo.ToString("F2",CultureInfo.InvariantCulture)}");
         }
+
     }
 }

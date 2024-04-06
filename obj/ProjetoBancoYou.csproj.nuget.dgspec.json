@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/arthur/Documentos/Dio/ProjetoBancoYou/ProjetoBancoYou.csproj": {}
+    "/home/arthurguerra/Documentos/BancoGitHub/ProjetoBanco/ProjetoBancoYou.csproj": {}
   },
   "projects": {
-    "/home/arthur/Documentos/Dio/ProjetoBancoYou/ProjetoBancoYou.csproj": {
+    "/home/arthurguerra/Documentos/BancoGitHub/ProjetoBanco/ProjetoBancoYou.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/arthur/Documentos/Dio/ProjetoBancoYou/ProjetoBancoYou.csproj",
+        "projectUniqueName": "/home/arthurguerra/Documentos/BancoGitHub/ProjetoBanco/ProjetoBancoYou.csproj",
         "projectName": "ProjetoBancoYou",
-        "projectPath": "/home/arthur/Documentos/Dio/ProjetoBancoYou/ProjetoBancoYou.csproj",
-        "packagesPath": "/home/arthur/.nuget/packages/",
-        "outputPath": "/home/arthur/Documentos/Dio/ProjetoBancoYou/obj/",
+        "projectPath": "/home/arthurguerra/Documentos/BancoGitHub/ProjetoBanco/ProjetoBancoYou.csproj",
+        "packagesPath": "/home/arthurguerra/.nuget/packages/",
+        "outputPath": "/home/arthurguerra/Documentos/BancoGitHub/ProjetoBanco/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/arthur/.nuget/NuGet/NuGet.Config"
+          "/home/arthurguerra/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.126/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.127/RuntimeIdentifierGraph.json"
         }
       }
     }

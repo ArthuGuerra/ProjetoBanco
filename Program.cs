@@ -1,53 +1,31 @@
-﻿using System.Globalization;
-using ProjetoBancoYou.Models;
+﻿using Banco.Models;
+using System.Collections.Generic;
+using System.Globalization;
 
-Console.WriteLine("Olá, seja bem vindo ao banco Guerra. Iremos fazer seu cadastro");
-Console.WriteLine("Digite seu nome por favor!");
-string nome = Console.ReadLine();
-Console.WriteLine("\n");
-Console.WriteLine("Digite 8 números da conta nesse formato por favor ####-#### ");
-string numeroConta = Console.ReadLine();
+Console.WriteLine("Wellcome Bank of war");
+Console.WriteLine("");
 
-Console.WriteLine("O senhor(a) deseja fazer um depósito inicial ? ");
-string resposta = Console.ReadLine();
+Console.WriteLine("Enter NumberAccount");
+int numberAccount = int.Parse(Console.ReadLine());
+Console.WriteLine("");
+Console.WriteLine("Enter Holder");
+string holder = Console.ReadLine();
+Console.WriteLine("");
 
+Bank bank= new Bank(numberAccount,holder);
 
-if (resposta == "s" || resposta == "S")
-{
-    Console.WriteLine("Digite o valor do depósito por favor");
-    decimal saldo = Convert.ToDecimal(Console.ReadLine(),CultureInfo.InvariantCulture);
-    Banco cliente = new Banco(numeroConta,nome,saldo);
+bank.DepositoInicial();
+Console.WriteLine("");
 
-    Console.WriteLine("Depósito feito com sucesso!");
-    Console.WriteLine("\n");
-    Console.WriteLine($"Saldo atual: {saldo.ToString("F2",CultureInfo.InvariantCulture)}");
-    Console.WriteLine("\n");
+bank.Depositar();
+Console.WriteLine("");
 
-    cliente.Dados();
-    Console.WriteLine("\n");
-    cliente.Depositar();
-    Console.WriteLine("\n");
-    cliente.Sacar();
-    Console.WriteLine("\n");
-    cliente.Dados();
-    
-
-}
-else
-{
-    Banco cliente = new Banco(numeroConta, nome);
-
-    cliente.Dados();
-    Console.WriteLine("\n");
-    cliente.Depositar();
-    Console.WriteLine("\n");
-    cliente.Sacar();
-    Console.WriteLine("\n");
-    cliente.Dados();
-}
+bank.Saque();
 
 
 
 
 
-// é isso, espero que tenham gostado. deixa o like tmj
+
+
+
